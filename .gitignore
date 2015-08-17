@@ -1,0 +1,4 @@
+# Excluindo arquivos usados pelo VS-Code
+.settings/
+typings/
+jsconfig.json
