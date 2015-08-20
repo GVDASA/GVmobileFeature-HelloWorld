@@ -1,9 +1,9 @@
-angular.module('aluno.eventos')
+angular.module('feature.helloWorld')
 
-.factory('Eventos', function($resource) {
+.factory('Sample', function($resource) {
     return {
         create: function() {
-            return $resource("~/api/eventos", {}, {
+            return $resource("~/api/sample", {}, {
                 "update": {
                     method: "PUT"
                 },
