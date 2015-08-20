@@ -1,14 +1,14 @@
-angular.module('helloWorld', [
+angular.module('feature.helloWorld', [
     'core'
 ])
 
 .config(function($stateProvider, MenuProvider) {
-    $stateProvider.state('main.hello', {
-        url: "/hello/:name",
+    $stateProvider.state('main.helloName', {
+        url: "/hello/:id",
         views: {
             'menuContent': {
-                templateUrl: 'GVmobileFeature-HelloWorld/helloWorld-name.html',
-                controller: "HelloWorldNameCtrl"
+                templateUrl: 'feature.helloWorld/helloWorld2.html',
+                controller: "HelloWorld2Ctrl"
             }
         }
     });
@@ -18,14 +18,14 @@ angular.module('helloWorld', [
         url: "/main/hello",
         icon: "ion-cube",
         module: "aluno",
-		feature: "helloWorld",
+		feature: "feature.helloWorld",
         desktop: true,
         order: 1,
         cfg: {
-            url: "/hello/",
+            url: "/hello",
             views: {
                 'menuContent': {
-                    templateUrl: 'GVmobileFeature-HelloWorld/helloWorld.html',
+                    templateUrl: 'feature.helloWorld/helloWorld.html',
                     controller: "HelloWorldCtrl"
                 }
             }

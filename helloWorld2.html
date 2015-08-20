@@ -1,0 +1,12 @@
+<ion-view view-title="Hello World">
+    <ion-content class="hello-world">
+        <div class="list text-center" ng-repeat="aluno in alunos">
+            <div class="item" ng-bind="aluno.nome"></div>
+            <div class="item">
+                <img src="{{aluno.foto}}" alt="{{aluno.nome}}">
+            </div>
+        </div>
+        <gvm-messages name="connectionStatus"></gvm-messages>
+        <gvm-messages></gvm-messages>
+    </ion-content>
+</ion-view>

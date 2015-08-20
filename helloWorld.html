@@ -1,13 +1,14 @@
 <ion-view view-title="Hello World">
     <ion-content class="hello-world">
-        <div class="list">
-            <li class="item">Hello World</li>
-        </div>
         <div class="list list-inset">
-            <label class="item item-input">
-                <input type="text" ng-model="name" placeholder="Digite algo">
-            </label>
-            <button class="button button-balanced">Enviar</button>
+            <li class="item">Usuário logado: <span ng-bind="usuario.nome"></span></li>
+        </div>
+        <div class="list">
+            <li class="item item-divider">Alunos vinculados</li>
+            <li class="item" ng-repeat="aluno in usuario.alunos" ng-click="navigationService.go('/main/hello/' + aluno.id)" ng-bind="aluno.nome"></li>
+        </div>
+        <div class="list">
+            <div class="item">Conheça mais em nossa documentação! :)</div>
         </div>
         <gvm-messages name="connectionStatus"></gvm-messages>
         <gvm-messages></gvm-messages>

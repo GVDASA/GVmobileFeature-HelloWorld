@@ -13,5 +13,5 @@
     "deps": [
         "core"
     ],
-    "alias": "HelloWorldTest2"
+    "alias": "feature.helloWorld"
 }
