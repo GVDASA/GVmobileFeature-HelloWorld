@@ -1,7 +1,4 @@
 {
-    "id": "F7ACE0A3-C6F7-4B3D-9D87-DC9E8B6B72C2",
-    "cowner": "9E623A00-A5F7-4DF8-8D50-1E449D419B26",
-    "mode": 1,
     "scripts": [
         "**/*.module.js",
         "**/*.js"
