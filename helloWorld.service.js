@@ -1,6 +1,6 @@
 angular.module('feature.helloWorld')
 
-.factory('Sample', function($resource) {
+.factory('SampleService', function($resource) {
     return {
         create: function() {
             return $resource("~/api/sample", {}, {
