@@ -10,8 +10,8 @@ angular.module('feature.helloWorld')
 
         // Parametros que serão passados para a VIEW
         var params = {
-                $filter:'codigopessoa eq '+$scope.usuario.codigoPessoa,          // Onde o copdigoPessoa for igual a 42
-                // $filter:'CodigoPessoa gt 1 lt 42 ' // Onde o codigoPessoa for maior que 1 e menor que 42
+                $filter:'codigopessoa eq '+$scope.usuario.codigoPessoa,          // Onde o copdigoPessoa for igual a 47
+                // $filter:'CodigoPessoa gt 1 lt 47 ' // Onde o codigoPessoa for maior que 1 e menor que 47
                 $orderby:'codigopessoa'               // Ordenado por codigoPessoa
                 //$top: 10, // Dez registros por página
                 //$skip: 10 // Indica quantos registros devem ser ignorados caso deseje utilizar paginação
