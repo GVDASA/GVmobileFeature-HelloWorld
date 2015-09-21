@@ -3,7 +3,7 @@ angular.module('feature.helloWorld')
 .factory('SampleService', function($resource) {
     return {
         create: function() {
-            return $resource("~/api/sample", {}, {
+            return $resource("~/api/views/pessoa/?$orderby=nome", {}, {
                 "update": {
                     method: "PUT"
                 },

@@ -7,13 +7,13 @@ angular.module('feature.helloWorld')
             navigationService: navigationService
         });
 
-        // SampleService.create().query({
-        //     // parameter: value
-        // }, function (data) {
-        //     gvmMessagesService.info('Consulta com sucesso.');
-        // }, function (data) {
-        //     gvmMessagesService.info('Problemas ao efetuar a consulta.');
-        // });
+        SampleService.create().query({}, function (data) {
+            console.log(data);
+            gvmMessagesService.info('Consulta com sucesso.');
+        }, function (data) {
+            console.log(data);
+            gvmMessagesService.info('Problemas ao efetuar a consulta.');
+        });
     })
 
     .controller('HelloWorld2Ctrl', function ($scope, $stateParams, User, gvmMessagesService, navigationService) {
